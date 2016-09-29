@@ -1,0 +1,28 @@
+# Script details
+
+#v1 
+1. aclreview.py
+     	  --kingdom (dfw,phx..etc)
+          --all ( all kingdom)
+          --user
+2. Output
+   - Html output
+   - Colored side by side diff between old and new acl revision
+   - Timestamp included
+   - Each diff file provides the ACL platform ( nexus, cisco, juniper ) captured through file extension
+   - New additions in green, removals in red, modification in yellow
+   - Single UI for each kingdom 
+   - TCAM comparisons between old and new revision for the rack using mracl 
+     (Run the analyze tcam on the old(yellow) and new(green) acls.   
+   - Reviewer data added to each file  
+   - *If single IP /32, resolve the IP ( Parse the diff and if single IP found resolve it and display it with mouse) 
+   - Diff data stays unchanged until the tool is run again in subsequent week
+   - Hardcoded Legend details on displayed on each diff page 
+
+
+#v2 
+1. Output
+   - History of past commits, requires mysql DB 
+   
+
+
